@@ -1,0 +1,135 @@
+/*  CSS Document - Proyect 5  */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600');
+@import url('normalize.css');
+
+* {
+	box-sizing: border-box; /*el border y el padding se descuentan del alto y ancho*/
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	background-image: url('../images/bg-body.png');
+}
+
+ul,ol{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none; /*saca el subrayado del enlace*/
+}
+
+img {
+	width: 100%;  /*quiero que las imagenes se ajusten al contenedor pero al inicio el tamaño del contenedor no esta seteado por eso ajusta al body*/
+}
+
+
+.container{  /* sirve para evitar tocar el body*/
+	margin: 0 15px;
+}
+
+.logo{
+	width: 180px;
+	margin: 15px auto 30px;
+	display:block;
+	border: solid 1px black;
+	border-radius: 50%;
+}
+
+.main-nav{
+	margin-bottom: 15px;
+}
+
+.main-nav a{
+	display: block;
+	background-color: black;
+	color:white;
+	padding: 15px;
+	border-bottom: 2px solid white;
+	text-transform: uppercase;
+}
+
+.toogle-nav{
+	display: block;
+	width: 50px;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+	background-color: black;
+	margin: 0 auto 15px;
+	padding: 15px 0px;
+	border-radius: 6px;
+}
+
+.main-banner{
+	display: none;
+}
+
+.product-data{
+	margin-bottom: 15px;
+}
+
+.product-data a{
+	background-color: black;
+	color: white;
+	padding: 10px 15px;
+}
+
+.main-footer{
+	background-color: red;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.main-footer a{
+	display: block;
+	background-color: black;
+	color:white;
+	padding: 15px 0;
+	border-bottom: 1px solid white;
+	text-transform: uppercase;
+	text-align: center;	
+}
+
+@media(min-width: 768px){  /*desde aqui hacia arriba*/
+	.container{
+		margin:0;
+	}
+
+	.toogle-nav{
+		display:none;
+	}
+
+	.main-nav ul{
+		overflow: hidden;
+	}
+ 	
+	.main-nav li{
+		width: 15%;
+		margin: 0 0.83%;
+		float:left;
+	}
+
+	.main-banner{
+		display:block;
+		margin: 0 0.83% 15px;
+	}
+
+	.products-container{
+		overflow: hidden;
+	}
+	
+	.product-data{
+		margin-left: 0.83%;
+		margin-right: 0.83%;
+		width: 48.33%;
+		float:left;
+	}
+}
+
+@media(min-width: 1024px){
+
+}
